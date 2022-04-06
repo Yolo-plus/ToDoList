@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ToDoList</title>
+	<link rel="stylesheet" type="text/css" href="ToDoList.css">
+</head>
+
+<body>
+	<header>
+		<div id="header">
+			<span id="title">ToDoList</span>
+			<div id="right">
+				<input type="button" class="add" value="新建" onmousedown="changeBorder1(this)" onmouseup="changeBorder2(this)" onclick="add()">
+				<div id="search">
+					<input type="text" name="" class="input" placeholder="" onfocus="changeBorder3()" onblur="changeBorder4()" oninput="find()">
+					<button type="button" class="search" onclick="find()">
+						<img src="search1.png" width="22" height="22" onmousedown="changeImage1(this)" onmouseup="changeImage2(this)">
+					</button>
+				<div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div id="todo">
+			<h3>正在进行</h3>
+			<h3 id="badge1"></h3>
+			<h3 id="toggle1" onmousedown="changeColor1(this)" onmouseup="changeColor2(this)" onclick="toggle()">切换</h3>
+			<div id="todolist">
+				
+			</div>
+		</div>
+
+		<div id="done">
+			<h3>已完成</h3>
+			<h3 id="badge2"></h3>
+			<h3 id="toggle2" onmousedown="changeColor1(this)" onmouseup="changeColor2(this)" onclick="toggle()">切换</h3>
+			<div id="donelist">
+
+			</div>
+		</div>
+
+		<div id="display">
+			<h3>结果</h3>
+			<h3 id="badge3"></h3>
+			<h3 id="close" onmousedown="changeColor1(this)" onmouseup="changeColor2(this)" onclick="close1()">关闭</h3>
+			<div id="content">
+
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div id="footer"><small>&copy;ToDoList By Yolo</small></div>
+	</footer>
+
+	<script type="text/javascript" src="ToDoList.js"></script>
+</body>
+</html>
